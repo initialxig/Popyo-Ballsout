@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Popyo Ballsout</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Viga&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="time section"></div>
+        <div class="score section">
+          <div class="current-score">0</div>
+          <div class="high-score-name">
+            HIGHSCORE: <span class="high-score"></span>
+          </div>
+        </div>
+        <div class="reset section"></div>
+      </div>
+
+      <div class="start-menu">
+        <div class="rules">
+          <h1>Rules</h1>
+          <p>Pop as many balls as posible before the time runs out!</p>
+          <p>
+            <span class="green">Green</span> - 100pts
+            <span class="info">(1 click)</span>
+          </p>
+          <p>
+            <span class="blue">Blue</span> - 200pts
+            <span class="info">(2 clicks)</span>
+          </p>
+          <p>
+            <span class="purple">Purple</span> - 300pts
+            <span class="info">(3 clicks)</span>
+          </p>
+          <p>
+            <span class="yellow">Yellow</span> - 20pts
+            <span class="info">(popping this add 5 seconds to the timer)</span>
+          </p>
+          <p>
+            <span class="red">Red</span> - 10pts
+            <span class="info"
+              >(Popping this takes out 8 seconds from the timer)</span
+            >
+          </p>
+
+          <button class="start-button">Start</button>
+        </div>
+
+        <div class="start-counter">3</div>
+      </div>
+
+      <div class="result-page">
+        <div class="result">
+          <h1 class="gameover-title">GameOver</h1>
+          <p class="score-title">score</p>
+          <p class="new-high">New High Score!</p>
+          <p class="final-score"></p>
+
+          <button class="start-over-button">Start Over</button>
+        </div>
+
+        <div class="start-counter">3</div>
+      </div>
+
+      <canvas id="canvas" width="600" height="505"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
